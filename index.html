@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+            
+            
+            
+        }
+        .section-separator {
+            content: '';
+            display: block;
+            height: 1px;
+            background: linear-gradient(to right, #e2e8f0, #cbd5e0, #e2e8f0);
+            width: 80%;
+            margin: 4rem auto;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="text-gray-800 bg-gray-100">
+
+    <!-- Header & Hero Section -->
+    <header class="bg-gray-900 text-white shadow-sm p-4 sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-400">Data Analyst </h1>
+            <div class="space-x-4">
+                <a href="#about" class="text-gray-300 hover:text-blue-400 transition-colors">About</a>
+                <a href="#education" class="text-gray-300 hover:text-blue-400 transition-colors">Education</a>
+                <a href="#certifications" class="text-gray-300 hover:text-blue-400 transition-colors">Certifications</a>
+                  <a href="#badges" class="text-gray-300 hover:text-blue-400 transition-colors">Badges & Achievements</a>
+                <a href="#skills" class="text-gray-300 hover:text-blue-400 transition-colors">Skills</a>
+                <a href="#projects" class="text-gray-300 hover:text-blue-400 transition-colors">Projects</a>
+                <a href="#contact" class="text-gray-300 hover:text-blue-400 transition-colors">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 bg-gray-900 bg-opacity-95 backdrop-blur-sm rounded-lg shadow-xl text-white">
+        <section id="hero" class="relative text-center py-16 flex flex-col items-center justify-center text-white min-h-screen -mt-12" style="background-image: url(gemini.png); background-size: cover; background-position: center; height:500px;width:100%;">
+            <!-- Background Overlay -->
+            <div class="absolute inset-0 bg-gray-900 opacity-20"></div>
+            <div class="relative z-10 flex flex-col items-center">
+                <div class="w-32 h-32 rounded-full overflow-hidden shadow-lg mb-6 bg-gray-700 flex items-center justify-center">
+                    <!-- The new profile icon is the letter A -->
+                    <span class="text-6xl font-bold text-white-400" >A</span>
+                </div>
+                <h2 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
+                    Hi, I'm <span class="text- text-white-300"> Angel Francis</span>.
+                </h2>
+                <p class="text-xl md:text-2xl text-white-200 max-w-2xl mb-8">
+                    A data analyst with a background in software development.
+                </p>
+                <a href="#projects" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105">
+                    View My Work
+                </a>
+            </div>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <!-- About Section -->
+        <section id="about" class="py-16">
+            <h3 class="text-4xl font-bold text-center mb-12 text-gray-100">About Me</h3>
+            <div class="max-w-4xl mx-auto text-lg text-gray-300 leading-relaxed space-y-6">
+                <p>
+                    I am a Master of Computer Applications (MCA) graduate who has transitioned to become a passionate and aspiring data analyst. My academic journey provided me with a strong foundation in a variety of programming languages and problem-solving techniques, culminating in a full-fledged web application, the **Pineapple Farm Management System**.
+                </p>
+                <p>
+                    After graduation, my passion for data led me to pursue a dedicated course in data analysis. This course solidified my interest and provided me with hands-on experience in turning raw data into actionable insights. I have since completed projects on **telecom customer churn analysis** and **EV sales trends**, where I utilized data to forecast future trends and identify key business drivers. I am confident in my ability to apply my technical skills to a data-centric role and am eager to start my journey toward becoming a successful data analyst.
+                </p>
+            </div>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <!-- Education Section -->
+        <section id="education" class="py-16">
+            <h3 class="text-4xl font-bold text-center mb-12 text-gray-100">Education</h3>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 text-gray-300">
+                <!-- Education Item 1 -->
+                <div class="bg-gray-800 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
+                    <h4 class="text-2xl font-semibold mb-1 text-gray-100">MCA</h4>
+                    <p class="text-lg font-medium text-gray-400"> Mahatma Gandhi University Kottayam,Kerala,India</p>
+                    <p class="text-sm text-gray-500 mb-4">2022 - 2024</p> 
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        <li>CGPA : 8.24 </li>
+                        <li> Grade : A </li>
+                    </ul>
+                </div>
+                <!-- Education Item 2 (Optional) -->
+                <div class="bg-gray-800 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
+                    <h4 class="text-2xl font-semibold mb-1 text-gray-100"> BSc.Physics</h4>
+                    <p class="text-lg font-medium text-gray-400"> Mahatma Gandhi University Kottayam,Kerala,India</p>
+                    <p class="text-sm text-gray-500 mb-4"> 2017 - 2020</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        <li> CCPA : 8.08 </li>
+                        <li> Grade : A </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-separator"></div>
+
+            <!-- Certifications Section -->
+        <section id="certifications" class="py-16">
+            <h3 class="text-4xl font-bold text-center mb-12 text-gray-100">Certifications</h3>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 text-gray-300">
+                <div class="bg-gray-800 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
+                    <h4 class="text-2xl font-semibold mb-1 text-gray-100">The Google Data Analytics Professional Certificate</h4>
+                    <p class="text-lg font-medium text-gray-400">Coursera / Google</p>
+                    <p class="text-sm text-gray-500 mb-4">Year: 2025</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        <li>Completed an 8-course series covering key aspects of data analysis.</li>
+                        <li>Gained hands-on experience with SQL, R, and Tableau for data manipulation and visualization.</li>
+                        <li>Learned to clean, process, and analyze data to drive business decisions.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
+                    <h4 class="text-2xl font-semibold mb-1 text-gray-100">Fundamentals of Web Designing</h4>
+                    <p class="text-lg font-medium text-gray-400"> Santhigiri College of Computer Sciences(Add-On Course)</p>
+                    <p class="text-sm text-gray-500 mb-4"> Academic Year: 2022 - 2023 </p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        <li>Completed a college course on fundamental web design principles.</li>
+                        <li>Gained experience with HTML and CSS for structuring and styling websites.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
+                    <h4 class="text-2xl font-semibold mb-1 text-gray-100">Web Application Development</h4>
+                    <p class="text-lg font-medium text-gray-400">Santhigiri College of Computer Sciences(Add-On Course)</p>
+                     <p class="text-sm text-gray-500 mb-4">Academic year: 2023 - 2024</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        <li>Developed skills in building dynamic web applications using Angular and Node.js.</li>
+                        <li>Gained experience in front-end and back-end development principles.</li>
+                    </ul>               
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
+                    <h4 class="text-2xl font-semibold mb-1 text-gray-100">Internship Certificate Program</h4>
+                    <p class="text-lg font-medium text-gray-400">Progressive Cybernetics</p>
+                    <p class="text-sm text-gray-500 mb-4">January - May (2025)</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        <li>Completed an internship program focused on ASP.NET.</li>
+                        <li>Applied knowledge of web technologies and databases in a professional environment.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
+                    <h4 class="text-2xl font-semibold mb-1 text-gray-100">NPTEL Elite Certification in Cloud Computing (Score: 68%)</h4>
+                    <p class="text-lg font-medium text-gray-400">Indian Institute of Technology Kharagpur</p>
+                    <p class="text-sm text-gray-500 mb-4">Year: 2023</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        <li>Focus: Core concepts and architectural principles of cloud infrastructure relevant to data management.
+
+                        <li>Skill Highlight: Gained a robust theoretical foundation in cloud service models, distributed computing, and big data architecture. This knowledge is essential for understanding scalable data storage, processing, and the deployment of analytical tools in a cloud-native environment.</li>
+                        Developed a foundational understanding of cloud computing principles and services.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-separator"></div>
+        
+        <!-- Badges & Achievements Section -->
+        <section id="badges" class="py-16">
+            <h3 class="text-4xl font-bold text-center mb-12 text-gray-100">Badges & Achievements</h3>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 text-gray-300">
+                <div class="bg-gray-800 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
+                    <div class="flex items-center mb-2">
+                        <img src="https://placehold.co/40x40/007bff/ffffff?text=Py" alt="Kaggle Python Badge" class="mr-3 rounded-full">
+                        <div>
+                            <h4 class="text-2xl font-semibold text-gray-100">Python Badge</h4>
+                            <p class="text-lg font-medium text-gray-400">Kaggle</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-4"> Awarded by Kaggle for successfully completing their Python course.</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        <li>This badge validates foundational skills in Python for data analysis, including syntax, data types, and functions.</li>
+                        <li>It demonstrates a verified grasp of Python basics through a series of hands-on, interactive exercises.</li>
+                        <li>Validated skills through hands-on application in real-world datasets and problems.</li>
+                    </ul>
+                    <a href="https://www.kaggle.com/angelfrancis2025" target="_blank" class="mt-4 inline-block text-blue-400 hover:text-blue-200 font-medium transition-colors">
+                        Verify on Kaggle &rarr;
+                    </a>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
+                    <div class="flex items-center mb-2">
+                         <img src="https://placehold.co/40x40/FFD700/000000?text=SQL" alt="HackerRank Golden SQL Badge" class="mr-3 rounded-full">
+                        <div>
+                            <h4 class="text-2xl font-semibold text-gray-100">Golden SQL Badge</h4>
+                            <p class="text-lg font-medium text-gray-400">HackerRank</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-4">Awarded for solving advanced SQL challenges.</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        <li>Achieved a golden rating by solving complex database queries and problems.</li>
+                        <li>Proves expertise in advanced SQL concepts and efficient database management.</li>
+                    </ul>
+                    <a href="https://www.hackerrank.com/profile/angelfrancisjan1" target="_blank" class="mt-4 inline-block text-blue-400 hover:text-blue-200 font-medium transition-colors">
+                        Verify on HackerRank &rarr;
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <div class="section-separator"></div>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16">
+            <h3 class="text-4xl font-bold text-center mb-12 text-gray-100">My Skills</h3>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-8 text-gray-300">
+                <!-- Category 1 -->
+                <div class="bg-gray-800 rounded-lg shadow-lg p-6">
+                    <h4 class="text-2xl font-semibold mb-4 text-gray-100">Programming Languages</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-blue-400 mr-2"></span>C</li>
+                        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-blue-400 mr-2"></span>MySQL</li>
+                        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-blue-400 mr-2"></span>MS SQL Server</li>
+                    </ul>
+                </div>
+                <!-- Category 2 -->
+                <div class="bg-gray-800 rounded-lg shadow-lg p-6">
+                    <h4 class="text-2xl font-semibold mb-4 text-gray-100">Data Analysis & Tools</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-blue-400 mr-2"></span>Tableau</li>
+                        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-blue-400 mr-2"></span>Power BI</li>
+                        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-blue-400 mr-2"></span>Excel</li>
+                        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-blue-400 mr-2"></span>Google Sheets</li>
+                        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-blue-400 mr-2"></span>Pandas</li>
+                    </ul>
+                </div>
+                <!-- Category 3 -->
+                <div class="bg-gray-800 rounded-lg shadow-lg p-6">
+                    <h4 class="text-2xl font-semibold mb-4 text-gray-100">Web Technologies</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-blue-400 mr-2"></span>HTML</li>
+                        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-blue-400 mr-2"></span>CSS</li>
+                        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-blue-400 mr-2"></span>ASP.NET</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16">
+            <h3 class="text-4xl font-bold text-center mb-12 text-gray-100">My Projects</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 with background image -->
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 relative" style="background-image: url('https://images.unsplash.com/photo-1594968412035-e1158d622992?q=80&w=600'); background-size: cover; background-position: center;">
+                    <div class="p-6 bg-gray-900 bg-opacity-70 h-full w-full">
+                        <h4 class="text-2xl font-semibold mb-2 text-gray-100"> 🍍Pineapple Farm Management System </h4>
+                        <p class="text-gray-300 mb-4">
+                        This project is a full-stack web application designed to manage the operations of a pineapple farm. Developed to streamline agricultural business processes, the system tracks key metrics such as **sales**, **inventory**, and **supplier transactions**. This dual-purpose project demonstrates my software development skills while also serving as a robust system for collecting clean, organized data, which can be used to generate future business insights.
+                        </p>
+                        <a href="https://github.com/angel1234-ship-it/project/tree/main" class="text-blue-400 hover:text-blue-200 font-medium transition-colors">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 with background image -->
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 relative" style="background-image: url('https://images.unsplash.com/photo-1549923758-0524458f3195?q=80&w=600'); background-size: cover; background-position: center;">
+                    <div class="p-6 bg-gray-900 bg-opacity-70 h-full w-full">
+                        <h4 class="text-2xl font-semibold mb-2 text-gray-100"> 📞 Telecom Customer Churn Analysis </h4>
+                        <p class="text-gray-300 mb-4">
+ This project analyzes customer churn for a fictional telecommunication company that provides both phone and internet services. Using a dataset from **Maven Analytics**, I followed a comprehensive workflow: first, I handled data cleaning and preparation in **Python** (using **pandas**), addressing missing values and inconsistencies. Next, I performed Exploratory Data Analysis (EDA) with **pandas** and visual checks like box plots. Finally, I created a professional dashboard in **Power BI** to uncover key insights on churn drivers, customer tenure, payment methods, referrals, and revenue distribution.
+
+                        </p>
+                        <a href="https://github.com/angel1234-ship-it/telecom-customer-churn-dashboard" class="text-blue-400 hover:text-blue-200 font-medium transition-colors">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 with background image -->
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 relative" style="background-image: url('https://images.unsplash.com/photo-1613959146199-e685f0e340b3?q=80&w=600'); background-size: cover; background-position: center;">
+                    <div class="p-6 bg-gray-900 bg-opacity-70 h-full w-full">
+                        <h4 class="text-2xl font-semibold mb-2 text-gray-100"> ⚡FROM SPARK TO SURGE:  EV GROWTH IN INDIA(2014–2023) </h4>
+                        <p class="text-gray-300 mb-4">
+                        This project analyzes the rapid rise of Electric Vehicle (EV) adoption in India from 2014 to 2023. Using a dataset from **Kaggle**, I first performed an **Exploratory Data Analysis (EDA)** to uncover key trends in adoption across different timelines, vehicle categories, and states. I then used **Tableau** to create interactive visualizations that highlight growth patterns and market shifts. The final output is a professional dashboard that connects data-driven insights to real-world policy and business implications.
+
+                        </p>
+                        <a href="https://github.com/angel1234-ship-it/Data-Analytics" class="text-blue-400 hover:text-blue-200 font-medium transition-colors">Learn More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16">
+            <h3 class="text-4xl font-bold text-center mb-12 text-gray-100">Get In Touch</h3>
+            <p class="text-lg text-center text-gray-300 max-w-2xl mx-auto mb-8">
+                I'm always open to new opportunities and collaborations. Feel free to reach out to me via email or connect with me on social media.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="mailto:angelfrancisjan11@gmail.com" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105">
+                    Email Me
+                </a>
+                <a href="https://www.linkedin.com/in/angel-francis11/" target="_blank" class="inline-block bg-gray-600 hover:bg-gray-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105">
+                    Connect on LinkedIn
+                </a>
+                <a href="https://github.com/angel1234-ship-it" target="_blank" class="inline-block bg-blue-600 hover:bg-gray-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105">
+                    GitHub
+                </a>
+                <!-- Resume Download Button -->
+                <!-- <a href="#" download="Your_Name_Resume.pdf" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105">
+                    Download Resume
+                </a> -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center p-6 mt-12">
+        <p>&copy; <span id="current-year"></span> Angel Francis. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
